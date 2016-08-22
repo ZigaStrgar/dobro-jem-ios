@@ -67,15 +67,55 @@
 		5116C0D31D6B0792000B359F /* Dobro jem */ = {
 			isa = PBXGroup;
 			children = (
+				5116C0EB1D6B0A52000B359F /* Model */,
+				5116C0EC1D6B0A57000B359F /* View */,
+				5116C0ED1D6B0A5D000B359F /* Controller */,
+				5116C0EE1D6B0AC6000B359F /* Util */,
+				5116C0EF1D6B0ACA000B359F /* Resources */,
 				5116C0D41D6B0792000B359F /* AppDelegate.swift */,
-				5116C0D61D6B0792000B359F /* ViewController.swift */,
-				5116C0D81D6B0792000B359F /* Main.storyboard */,
 				5116C0DE1D6B0792000B359F /* Assets.xcassets */,
-				5116C0E01D6B0792000B359F /* LaunchScreen.storyboard */,
 				5116C0E31D6B0792000B359F /* Info.plist */,
 				5116C0DB1D6B0792000B359F /* Dobro_jem.xcdatamodeld */,
 			);
 			path = "Dobro jem";
+			sourceTree = "<group>";
+		};
+		5116C0EB1D6B0A52000B359F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5116C0EC1D6B0A57000B359F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5116C0E01D6B0792000B359F /* LaunchScreen.storyboard */,
+				5116C0D81D6B0792000B359F /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5116C0ED1D6B0A5D000B359F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5116C0D61D6B0792000B359F /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5116C0EE1D6B0AC6000B359F /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		5116C0EF1D6B0ACA000B359F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		66542FBCC8D35B5F2726BEB8 /* Frameworks */ = {
