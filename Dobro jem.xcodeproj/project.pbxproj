@@ -15,6 +15,9 @@
 		5116C0DF1D6B0792000B359F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5116C0DE1D6B0792000B359F /* Assets.xcassets */; };
 		5116C0E21D6B0792000B359F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5116C0E01D6B0792000B359F /* LaunchScreen.storyboard */; };
 		5116C0EA1D6B0816000B359F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5116C0E91D6B0816000B359F /* MapKit.framework */; };
+		5116C0F81D6B14A5000B359F /* caveat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5116C0F61D6B14A5000B359F /* caveat.ttf */; };
+		5116C0F91D6B14A5000B359F /* comfortaa.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5116C0F71D6B14A5000B359F /* comfortaa.ttf */; };
+		5116C0FB1D6B14DD000B359F /* dobro-jem.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5116C0FA1D6B14DD000B359F /* dobro-jem.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		5116C0E11D6B0792000B359F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5116C0E31D6B0792000B359F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5116C0E91D6B0816000B359F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5116C0F61D6B14A5000B359F /* caveat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = caveat.ttf; sourceTree = "<group>"; };
+		5116C0F71D6B14A5000B359F /* comfortaa.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = comfortaa.ttf; sourceTree = "<group>"; };
+		5116C0FA1D6B14DD000B359F /* dobro-jem.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dobro-jem.ttf"; sourceTree = "<group>"; };
 		AE5245A6CFFCAA559B118D1E /* Pods_Dobro_jem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dobro_jem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02BEFBDFAE7D7128CCDCDA0 /* Pods-Dobro jem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dobro jem.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dobro jem/Pods-Dobro jem.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +120,9 @@
 		5116C0EF1D6B0ACA000B359F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5116C0FA1D6B14DD000B359F /* dobro-jem.ttf */,
+				5116C0F61D6B14A5000B359F /* caveat.ttf */,
+				5116C0F71D6B14A5000B359F /* comfortaa.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -201,9 +210,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5116C0FB1D6B14DD000B359F /* dobro-jem.ttf in Resources */,
 				5116C0E21D6B0792000B359F /* LaunchScreen.storyboard in Resources */,
 				5116C0DF1D6B0792000B359F /* Assets.xcassets in Resources */,
+				5116C0F81D6B14A5000B359F /* caveat.ttf in Resources */,
 				5116C0DA1D6B0792000B359F /* Main.storyboard in Resources */,
+				5116C0F91D6B14A5000B359F /* comfortaa.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
