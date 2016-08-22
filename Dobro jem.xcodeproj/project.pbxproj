@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5116C0D51D6B0792000B359F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5116C0D41D6B0792000B359F /* AppDelegate.swift */; };
+		5116C0D71D6B0792000B359F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5116C0D61D6B0792000B359F /* ViewController.swift */; };
+		5116C0DA1D6B0792000B359F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5116C0D81D6B0792000B359F /* Main.storyboard */; };
+		5116C0DD1D6B0792000B359F /* Dobro_jem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5116C0DB1D6B0792000B359F /* Dobro_jem.xcdatamodeld */; };
+		5116C0DF1D6B0792000B359F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5116C0DE1D6B0792000B359F /* Assets.xcassets */; };
+		5116C0E21D6B0792000B359F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5116C0E01D6B0792000B359F /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5116C0D11D6B0792000B359F /* Dobro jem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dobro jem.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5116C0D41D6B0792000B359F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5116C0D61D6B0792000B359F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5116C0D91D6B0792000B359F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5116C0DC1D6B0792000B359F /* Dobro_jem.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dobro_jem.xcdatamodel; sourceTree = "<group>"; };
+		5116C0DE1D6B0792000B359F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5116C0E11D6B0792000B359F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5116C0E31D6B0792000B359F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5116C0CE1D6B0792000B359F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5116C0C81D6B0792000B359F = {
+			isa = PBXGroup;
+			children = (
+				5116C0D31D6B0792000B359F /* Dobro jem */,
+				5116C0D21D6B0792000B359F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5116C0D21D6B0792000B359F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5116C0D11D6B0792000B359F /* Dobro jem.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5116C0D31D6B0792000B359F /* Dobro jem */ = {
+			isa = PBXGroup;
+			children = (
+				5116C0D41D6B0792000B359F /* AppDelegate.swift */,
+				5116C0D61D6B0792000B359F /* ViewController.swift */,
+				5116C0D81D6B0792000B359F /* Main.storyboard */,
+				5116C0DE1D6B0792000B359F /* Assets.xcassets */,
+				5116C0E01D6B0792000B359F /* LaunchScreen.storyboard */,
+				5116C0E31D6B0792000B359F /* Info.plist */,
+				5116C0DB1D6B0792000B359F /* Dobro_jem.xcdatamodeld */,
+			);
+			path = "Dobro jem";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5116C0D01D6B0792000B359F /* Dobro jem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5116C0E61D6B0792000B359F /* Build configuration list for PBXNativeTarget "Dobro jem" */;
+			buildPhases = (
+				5116C0CD1D6B0792000B359F /* Sources */,
+				5116C0CE1D6B0792000B359F /* Frameworks */,
+				5116C0CF1D6B0792000B359F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dobro jem";
+			productName = "Dobro jem";
+			productReference = 5116C0D11D6B0792000B359F /* Dobro jem.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5116C0C91D6B0792000B359F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Ziga Strgar";
+				TargetAttributes = {
+					5116C0D01D6B0792000B359F = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 5116C0CC1D6B0792000B359F /* Build configuration list for PBXProject "Dobro jem" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5116C0C81D6B0792000B359F;
+			productRefGroup = 5116C0D21D6B0792000B359F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5116C0D01D6B0792000B359F /* Dobro jem */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5116C0CF1D6B0792000B359F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5116C0E21D6B0792000B359F /* LaunchScreen.storyboard in Resources */,
+				5116C0DF1D6B0792000B359F /* Assets.xcassets in Resources */,
+				5116C0DA1D6B0792000B359F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5116C0CD1D6B0792000B359F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5116C0D71D6B0792000B359F /* ViewController.swift in Sources */,
+				5116C0D51D6B0792000B359F /* AppDelegate.swift in Sources */,
+				5116C0DD1D6B0792000B359F /* Dobro_jem.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5116C0D81D6B0792000B359F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5116C0D91D6B0792000B359F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5116C0E01D6B0792000B359F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5116C0E11D6B0792000B359F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5116C0E41D6B0792000B359F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5116C0E51D6B0792000B359F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5116C0E71D6B0792000B359F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Dobro jem/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "si.dobro-jem.Dobro-jem";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5116C0E81D6B0792000B359F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Dobro jem/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "si.dobro-jem.Dobro-jem";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5116C0CC1D6B0792000B359F /* Build configuration list for PBXProject "Dobro jem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5116C0E41D6B0792000B359F /* Debug */,
+				5116C0E51D6B0792000B359F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5116C0E61D6B0792000B359F /* Build configuration list for PBXNativeTarget "Dobro jem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5116C0E71D6B0792000B359F /* Debug */,
+				5116C0E81D6B0792000B359F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5116C0DB1D6B0792000B359F /* Dobro_jem.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5116C0DC1D6B0792000B359F /* Dobro_jem.xcdatamodel */,
+			);
+			currentVersion = 5116C0DC1D6B0792000B359F /* Dobro_jem.xcdatamodel */;
+			path = Dobro_jem.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5116C0C91D6B0792000B359F /* Project object */;
+}
