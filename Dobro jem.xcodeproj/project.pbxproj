@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E190FB427049AB47A480AB5 /* Pods_Dobro_jem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5245A6CFFCAA559B118D1E /* Pods_Dobro_jem.framework */; };
 		5116C0D51D6B0792000B359F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5116C0D41D6B0792000B359F /* AppDelegate.swift */; };
 		5116C0D71D6B0792000B359F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5116C0D61D6B0792000B359F /* ViewController.swift */; };
 		5116C0DA1D6B0792000B359F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5116C0D81D6B0792000B359F /* Main.storyboard */; };
 		5116C0DD1D6B0792000B359F /* Dobro_jem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5116C0DB1D6B0792000B359F /* Dobro_jem.xcdatamodeld */; };
 		5116C0DF1D6B0792000B359F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5116C0DE1D6B0792000B359F /* Assets.xcassets */; };
 		5116C0E21D6B0792000B359F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5116C0E01D6B0792000B359F /* LaunchScreen.storyboard */; };
+		5116C0EA1D6B0816000B359F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5116C0E91D6B0816000B359F /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		074F1D537EA706D07485B637 /* Pods-Dobro jem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dobro jem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dobro jem/Pods-Dobro jem.debug.xcconfig"; sourceTree = "<group>"; };
 		5116C0D11D6B0792000B359F /* Dobro jem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dobro jem.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5116C0D41D6B0792000B359F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5116C0D61D6B0792000B359F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		5116C0DE1D6B0792000B359F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5116C0E11D6B0792000B359F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5116C0E31D6B0792000B359F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5116C0E91D6B0816000B359F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		AE5245A6CFFCAA559B118D1E /* Pods_Dobro_jem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dobro_jem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C02BEFBDFAE7D7128CCDCDA0 /* Pods-Dobro jem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dobro jem.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dobro jem/Pods-Dobro jem.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5116C0EA1D6B0816000B359F /* MapKit.framework in Frameworks */,
+				0E190FB427049AB47A480AB5 /* Pods_Dobro_jem.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +48,11 @@
 		5116C0C81D6B0792000B359F = {
 			isa = PBXGroup;
 			children = (
+				5116C0E91D6B0816000B359F /* MapKit.framework */,
 				5116C0D31D6B0792000B359F /* Dobro jem */,
 				5116C0D21D6B0792000B359F /* Products */,
+				8B1F31057BE830B15013CED0 /* Pods */,
+				66542FBCC8D35B5F2726BEB8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +78,23 @@
 			path = "Dobro jem";
 			sourceTree = "<group>";
 		};
+		66542FBCC8D35B5F2726BEB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE5245A6CFFCAA559B118D1E /* Pods_Dobro_jem.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B1F31057BE830B15013CED0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				074F1D537EA706D07485B637 /* Pods-Dobro jem.debug.xcconfig */,
+				C02BEFBDFAE7D7128CCDCDA0 /* Pods-Dobro jem.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5116C0E61D6B0792000B359F /* Build configuration list for PBXNativeTarget "Dobro jem" */;
 			buildPhases = (
+				09696B24ECA40CCF580C682E /* [CP] Check Pods Manifest.lock */,
 				5116C0CD1D6B0792000B359F /* Sources */,
 				5116C0CE1D6B0792000B359F /* Frameworks */,
 				5116C0CF1D6B0792000B359F /* Resources */,
+				8E9B09C451C6D0CF5694F9BC /* [CP] Embed Pods Frameworks */,
+				C72E32340AC3898B92F2A8EE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -99,6 +130,11 @@
 				TargetAttributes = {
 					5116C0D01D6B0792000B359F = {
 						CreatedOnToolsVersion = 7.3.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -132,6 +168,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09696B24ECA40CCF580C682E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8E9B09C451C6D0CF5694F9BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dobro jem/Pods-Dobro jem-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C72E32340AC3898B92F2A8EE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dobro jem/Pods-Dobro jem-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5116C0CD1D6B0792000B359F /* Sources */ = {
@@ -253,6 +337,7 @@
 		};
 		5116C0E71D6B0792000B359F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 074F1D537EA706D07485B637 /* Pods-Dobro jem.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Dobro jem/Info.plist";
@@ -264,6 +349,7 @@
 		};
 		5116C0E81D6B0792000B359F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C02BEFBDFAE7D7128CCDCDA0 /* Pods-Dobro jem.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Dobro jem/Info.plist";
@@ -292,6 +378,7 @@
 				5116C0E81D6B0792000B359F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
