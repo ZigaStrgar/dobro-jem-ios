@@ -1,13 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="comfortaa.ttf">
+            <string>Comfortaa-Regular</string>
+            <string>Comfortaa-Regular</string>
+            <string>Comfortaa-Regular</string>
+        </mutableArray>
+        <mutableArray key="dobro-jem.ttf">
+            <string>dobro-jem-ios</string>
+            <string>dobro-jem-ios</string>
+            <string>dobro-jem-ios</string>
+            <string>dobro-jem-ios</string>
+            <string>dobro-jem-ios</string>
+            <string>dobro-jem-ios</string>
+            <string>dobro-jem-ios</string>
+            <string>dobro-jem-ios</string>
+            <string>dobro-jem-ios</string>
+            <string>dobro-jem-ios</string>
+            <string>dobro-jem-ios</string>
+            <string>dobro-jem-ios</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dobro_jem" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +38,424 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wv8-ld-eLt">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="IMY-av-pt7"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="249" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eWF-1K-SxF">
+                                <rect key="frame" x="0.0" y="142" width="600" height="458"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RestaurantCell" rowHeight="249" id="T3V-Yi-EUw" customClass="RestaurantCell" customModule="Dobro_jem" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="249"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="T3V-Yi-EUw" id="LNR-Ea-Lir">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="248.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W01-kM-Hjn">
+                                                    <rect key="frame" x="8" y="26" width="584" height="4"/>
+                                                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="4" id="Sj4-67-9rb"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="4" id="i1z-ZR-rM0"/>
+                                                    </constraints>
+                                                </view>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="roe-VV-pqx">
+                                                    <rect key="frame" x="80" y="8" width="440" height="40"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NEj-tH-AHo" customClass="FeatureView" customModule="Dobro_jem" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="u" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rS-S8-BVw">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                    <fontDescription key="fontDescription" name="dobro-jem-ios" family="dobro-jem-ios" pointSize="21"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="40" id="C0e-bR-t5b"/>
+                                                                <constraint firstAttribute="height" constant="40" id="DEg-lW-Bgt"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eT8-h0-aiH" customClass="FeatureView" customModule="Dobro_jem" customModuleProvider="target">
+                                                            <rect key="frame" x="50" y="0.0" width="40" height="40"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="v" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qnk-iC-N1E">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                    <fontDescription key="fontDescription" name="dobro-jem-ios" family="dobro-jem-ios" pointSize="21"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="40" id="41J-HK-xJz"/>
+                                                                <constraint firstAttribute="width" constant="40" id="yHX-pG-SxQ"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KQV-t7-xK5" customClass="FeatureView" customModule="Dobro_jem" customModuleProvider="target">
+                                                            <rect key="frame" x="100" y="0.0" width="40" height="40"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9oL-I5-k9z">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                    <fontDescription key="fontDescription" name="dobro-jem-ios" family="dobro-jem-ios" pointSize="21"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="40" id="Ekb-t5-EeV"/>
+                                                                <constraint firstAttribute="width" constant="40" id="t5K-Zg-PTq"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dl1-Dg-CTT" customClass="FeatureView" customModule="Dobro_jem" customModuleProvider="target">
+                                                            <rect key="frame" x="150" y="0.0" width="40" height="40"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="t" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Hs-Dx-A6Q">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                    <fontDescription key="fontDescription" name="dobro-jem-ios" family="dobro-jem-ios" pointSize="21"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="40" id="PCR-y7-trt"/>
+                                                                <constraint firstAttribute="width" constant="40" id="gh6-kX-xT3"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AWj-7h-awt" customClass="FeatureView" customModule="Dobro_jem" customModuleProvider="target">
+                                                            <rect key="frame" x="200" y="0.0" width="40" height="40"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="y" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W36-WR-8uI">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                    <fontDescription key="fontDescription" name="dobro-jem-ios" family="dobro-jem-ios" pointSize="21"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="40" id="S9b-ko-RFW"/>
+                                                                <constraint firstAttribute="height" constant="40" id="TSd-iF-Nve"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rwh-gu-7QS" customClass="FeatureView" customModule="Dobro_jem" customModuleProvider="target">
+                                                            <rect key="frame" x="250" y="0.0" width="40" height="40"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IlG-Rj-TTL">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                    <fontDescription key="fontDescription" name="dobro-jem-ios" family="dobro-jem-ios" pointSize="21"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="40" id="Oio-jC-i3N"/>
+                                                                <constraint firstAttribute="width" constant="40" id="cMS-fg-2oI"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bB1-4h-fS1" customClass="FeatureView" customModule="Dobro_jem" customModuleProvider="target">
+                                                            <rect key="frame" x="300" y="0.0" width="40" height="40"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="f" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2l-Gu-byE">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                    <fontDescription key="fontDescription" name="dobro-jem-ios" family="dobro-jem-ios" pointSize="21"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="40" id="bdj-yh-A1s"/>
+                                                                <constraint firstAttribute="width" constant="40" id="g1M-AT-ZZA"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WK3-x3-clx" customClass="FeatureView" customModule="Dobro_jem" customModuleProvider="target">
+                                                            <rect key="frame" x="350" y="0.0" width="40" height="40"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="x" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SvJ-6c-ABS">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                    <fontDescription key="fontDescription" name="dobro-jem-ios" family="dobro-jem-ios" pointSize="21"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="40" id="Dzd-hW-y3X"/>
+                                                                <constraint firstAttribute="width" constant="40" id="p9V-cl-enq"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4J4-rP-Mz2" customClass="FeatureView" customModule="Dobro_jem" customModuleProvider="target">
+                                                            <rect key="frame" x="400" y="0.0" width="40" height="40"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="w" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a42-2f-7O1">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                    <fontDescription key="fontDescription" name="dobro-jem-ios" family="dobro-jem-ios" pointSize="21"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="40" id="DaQ-6c-nYS"/>
+                                                                <constraint firstAttribute="height" constant="40" id="Egr-Ot-HKb"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="440" id="Wg5-bQ-U6U"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ime restavracije" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="ZYB-mF-P9p">
+                                                    <rect key="frame" x="26" y="56" width="566" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="bAG-2t-Ci0"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="vz9-7j-OSQ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="24"/>
+                                                    <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="55P-eO-wPe">
+                                                    <rect key="frame" x="8" y="146" width="584" height="2"/>
+                                                    <color key="backgroundColor" red="0.88361378209999997" green="0.88361378209999997" blue="0.88361378209999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="2" id="du6-rN-TVh"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2,30 €" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iq0-aA-doW">
+                                                    <rect key="frame" x="229" y="127" width="142" height="40"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="O3H-kx-Wdh"/>
+                                                        <constraint firstAttribute="width" constant="142" id="mfI-hJ-ND4"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="32"/>
+                                                    <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bVX-vY-2cA">
+                                                    <rect key="frame" x="8" y="187" width="584" height="46"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ctI-uz-DeR">
+                                                            <rect key="frame" x="0.0" y="0.0" width="195" height="46"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="n" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQi-aJ-eBT">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="195" height="18"/>
+                                                                    <fontDescription key="fontDescription" name="dobro-jem-ios" family="dobro-jem-ios" pointSize="17"/>
+                                                                    <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="4.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="838-3s-Of8">
+                                                                    <rect key="frame" x="0.0" y="26" width="195" height="21"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gJD-3n-Pg1">
+                                                            <rect key="frame" x="195" y="0.0" width="195" height="46"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="D" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uyc-Dt-SGD">
+                                                                    <rect key="frame" x="89" y="0.0" width="17" height="18"/>
+                                                                    <fontDescription key="fontDescription" name="dobro-jem-ios" family="dobro-jem-ios" pointSize="17"/>
+                                                                    <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="3000 km" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRv-Yu-AKe">
+                                                                    <rect key="frame" x="63" y="26" width="69" height="21"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sKR-OH-PAp">
+                                                            <rect key="frame" x="390" y="0.0" width="195" height="46"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="E" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJp-bd-34N">
+                                                                    <rect key="frame" x="89" y="0.0" width="17" height="17"/>
+                                                                    <fontDescription key="fontDescription" name="dobro-jem-ios" family="dobro-jem-ios" pointSize="17"/>
+                                                                    <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="13" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x41-UW-mJU">
+                                                                    <rect key="frame" x="88" y="25" width="18" height="21"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="46" id="diK-K6-yE3"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Naslov restavracije" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8wT-SR-lqs">
+                                                    <rect key="frame" x="8" y="94" width="584" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="Ud2-FG-7xc"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T8u-s5-ugU" customClass="FeatureView" customModule="Dobro_jem" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="66" width="10" height="10"/>
+                                                    <color key="backgroundColor" red="0.2274509804" green="0.85882352939999995" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="10" id="EXY-wp-tSc"/>
+                                                        <constraint firstAttribute="width" constant="10" id="Ien-Ku-Zcp"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="10" id="VkQ-gc-77r"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="gz3-fu-M4v"/>
+                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="VkQ-gc-77r"/>
+                                                            <exclude reference="gz3-fu-M4v"/>
+                                                        </mask>
+                                                    </variation>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bVX-vY-2cA" firstAttribute="top" secondItem="Iq0-aA-doW" secondAttribute="bottom" constant="20" id="0CH-5x-aMT"/>
+                                                <constraint firstItem="55P-eO-wPe" firstAttribute="leading" secondItem="LNR-Ea-Lir" secondAttribute="leadingMargin" id="205-mt-TmS"/>
+                                                <constraint firstItem="W01-kM-Hjn" firstAttribute="trailing" secondItem="LNR-Ea-Lir" secondAttribute="trailingMargin" id="4V4-4W-u3V"/>
+                                                <constraint firstItem="roe-VV-pqx" firstAttribute="top" secondItem="LNR-Ea-Lir" secondAttribute="topMargin" id="7o4-q2-4Dw"/>
+                                                <constraint firstItem="Iq0-aA-doW" firstAttribute="centerY" secondItem="55P-eO-wPe" secondAttribute="centerY" id="A8J-5i-cCg"/>
+                                                <constraint firstItem="W01-kM-Hjn" firstAttribute="leading" secondItem="LNR-Ea-Lir" secondAttribute="leadingMargin" id="BcJ-nm-XcK"/>
+                                                <constraint firstItem="8wT-SR-lqs" firstAttribute="top" secondItem="ZYB-mF-P9p" secondAttribute="bottom" constant="8" id="DKN-zD-kWA"/>
+                                                <constraint firstItem="ZYB-mF-P9p" firstAttribute="trailing" secondItem="LNR-Ea-Lir" secondAttribute="trailingMargin" id="I3H-jL-kIT"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="bVX-vY-2cA" secondAttribute="trailing" id="I8P-Ro-j73"/>
+                                                <constraint firstItem="roe-VV-pqx" firstAttribute="centerX" secondItem="LNR-Ea-Lir" secondAttribute="centerX" id="Jck-Tz-HSd"/>
+                                                <constraint firstItem="8wT-SR-lqs" firstAttribute="trailing" secondItem="LNR-Ea-Lir" secondAttribute="trailingMargin" id="L0H-9F-1X1"/>
+                                                <constraint firstItem="roe-VV-pqx" firstAttribute="centerY" secondItem="W01-kM-Hjn" secondAttribute="centerY" id="NSB-wn-tfk"/>
+                                                <constraint firstItem="55P-eO-wPe" firstAttribute="trailing" secondItem="LNR-Ea-Lir" secondAttribute="trailingMargin" id="POm-uI-1ua"/>
+                                                <constraint firstItem="T8u-s5-ugU" firstAttribute="leading" secondItem="LNR-Ea-Lir" secondAttribute="leadingMargin" id="SXh-gp-Pxe"/>
+                                                <constraint firstItem="Iq0-aA-doW" firstAttribute="top" secondItem="8wT-SR-lqs" secondAttribute="bottom" constant="11" id="W7H-fd-ZKD"/>
+                                                <constraint firstItem="T8u-s5-ugU" firstAttribute="centerY" secondItem="ZYB-mF-P9p" secondAttribute="centerY" id="YMu-Yx-b5W"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="roe-VV-pqx" secondAttribute="trailing" id="bdW-17-UrS"/>
+                                                <constraint firstItem="Iq0-aA-doW" firstAttribute="centerX" secondItem="LNR-Ea-Lir" secondAttribute="centerX" id="boJ-XK-OiV"/>
+                                                <constraint firstItem="bVX-vY-2cA" firstAttribute="leading" secondItem="LNR-Ea-Lir" secondAttribute="leadingMargin" id="gTe-AW-aQj"/>
+                                                <constraint firstItem="ZYB-mF-P9p" firstAttribute="top" secondItem="roe-VV-pqx" secondAttribute="bottom" constant="8" id="nUt-Ou-SFx"/>
+                                                <constraint firstItem="ZYB-mF-P9p" firstAttribute="leading" secondItem="T8u-s5-ugU" secondAttribute="trailing" constant="8" id="oYi-Kv-dWY"/>
+                                                <constraint firstItem="roe-VV-pqx" firstAttribute="leading" secondItem="LNR-Ea-Lir" secondAttribute="leadingMargin" id="rGa-US-VX2"/>
+                                                <constraint firstItem="8wT-SR-lqs" firstAttribute="leading" secondItem="LNR-Ea-Lir" secondAttribute="leadingMargin" id="x26-Gw-jeu"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="bdW-17-UrS"/>
+                                                    <exclude reference="rGa-US-VX2"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="bonusFeautre" destination="KQV-t7-xK5" id="1JQ-eC-5LL"/>
+                                            <outlet property="deliveryFeature" destination="rwh-gu-7QS" id="yiW-Ln-I7Q"/>
+                                            <outlet property="disabilityFeature" destination="WK3-x3-clx" id="7aM-2n-M1U"/>
+                                            <outlet property="fastFoodFeature" destination="4J4-rP-Mz2" id="OYc-34-hfs"/>
+                                            <outlet property="lunchFeature" destination="AWj-7h-awt" id="fB0-08-FBt"/>
+                                            <outlet property="pizzaFeature" destination="NEj-tH-AHo" id="CzS-3t-yz0"/>
+                                            <outlet property="restaurantActivity" destination="T8u-s5-ugU" id="Lmy-ly-gT0"/>
+                                            <outlet property="restaurantAddress" destination="8wT-SR-lqs" id="zMk-Gi-n0b"/>
+                                            <outlet property="restaurantComments" destination="x41-UW-mJU" id="6t9-3p-FTu"/>
+                                            <outlet property="restaurantDistance" destination="oRv-Yu-AKe" id="onf-mQ-kKH"/>
+                                            <outlet property="restaurantName" destination="ZYB-mF-P9p" id="lSp-fs-5VY"/>
+                                            <outlet property="restaurantPrice" destination="Iq0-aA-doW" id="gE9-ry-hmV"/>
+                                            <outlet property="restaurantRating" destination="838-3s-Of8" id="pwm-4l-yOp"/>
+                                            <outlet property="saladFeature" destination="Dl1-Dg-CTT" id="UBo-hZ-1ei"/>
+                                            <outlet property="vegiFeature" destination="eT8-h0-aiH" id="hhz-xA-gPR"/>
+                                            <outlet property="weekendFeature" destination="bB1-4h-fS1" id="bub-Ks-ukh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="cHk-iw-3Ch"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="wzb-4y-Z1e"/>
+                                </connections>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="PGy-y1-pnj">
+                                <rect key="frame" x="265" y="20" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="C0P-UR-RAb"/>
+                                    <constraint firstAttribute="width" constant="70" id="Fsw-vc-rkA"/>
+                                </constraints>
+                            </imageView>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="Oyk-32-wuV">
+                                <rect key="frame" x="0.0" y="98" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="a0O-os-O99"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eWF-1K-SxF" firstAttribute="top" secondItem="Oyk-32-wuV" secondAttribute="bottom" id="4M2-8R-HlE"/>
+                            <constraint firstAttribute="trailing" secondItem="eWF-1K-SxF" secondAttribute="trailing" id="CDy-AK-YyD"/>
+                            <constraint firstItem="Oyk-32-wuV" firstAttribute="top" secondItem="PGy-y1-pnj" secondAttribute="bottom" constant="8" id="Fss-Vd-ze1"/>
+                            <constraint firstItem="eWF-1K-SxF" firstAttribute="top" secondItem="PGy-y1-pnj" secondAttribute="bottom" constant="8" id="Kke-fQ-0YD"/>
+                            <constraint firstAttribute="trailing" secondItem="wv8-ld-eLt" secondAttribute="trailing" id="SbX-Lf-nXJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Oyk-32-wuV" secondAttribute="trailing" id="Sbe-3g-eg6"/>
+                            <constraint firstItem="PGy-y1-pnj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mgC-y8-N4x"/>
+                            <constraint firstItem="Oyk-32-wuV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oC4-Zp-MDr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eWF-1K-SxF" secondAttribute="bottom" id="oGz-bh-y5m"/>
+                            <constraint firstItem="wv8-ld-eLt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pSi-dY-LzT"/>
+                            <constraint firstItem="wv8-ld-eLt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sxp-6d-WY9"/>
+                            <constraint firstItem="eWF-1K-SxF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="x5g-fn-lyc"/>
+                            <constraint firstItem="PGy-y1-pnj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="ypL-TT-cUS"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Kke-fQ-0YD"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="searchBar" destination="Oyk-32-wuV" id="QEI-Sn-Nd5"/>
+                        <outlet property="tableView" destination="eWF-1K-SxF" id="jBq-Lm-NOJ"/>
+                        <segue destination="yJi-vn-id4" kind="show" identifier="RestaurantDetail" id="xSD-dI-gdN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="317"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XpB-7a-h9t">
+            <objects>
+                <viewController id="yJi-vn-id4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h6j-Jn-AjQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="hJM-Vn-QPP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KOg-iM-1Ii">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2oZ-gB-h7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1023" y="317"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="90" height="90"/>
+    </resources>
 </document>
