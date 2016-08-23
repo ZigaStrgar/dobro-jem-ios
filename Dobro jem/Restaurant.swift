@@ -9,6 +9,7 @@
 import Foundation
 import Alamofire
 import SwiftyJSON
+import MapKit
 
 extension Float {
     var rating: String {
@@ -36,6 +37,7 @@ class Restaurant {
     private var _restaurantURL: String!
     private var _phones: [String]!
     private var _features: [Int]!
+    private var _calculatedDistance: Double!
     private var _menus: Array<Array<String>>!
     
     var name: String {
@@ -118,6 +120,10 @@ class Restaurant {
         return _sundays
     }
     
+    var calcDistance: Double {
+        return _calculatedDistance
+    }
+    
     func isOpened() -> Bool? {
         return _opened
     }
@@ -126,7 +132,7 @@ class Restaurant {
         
     }
     
-    func configRestaurant(json: JSON) {
+    func configRestaurant(json: JSON, location: CLLocationCoordinate2D) {
         self._name = json["name"].string
         self._price = json["price"].string
         self._address = json["address"].string
@@ -136,6 +142,7 @@ class Restaurant {
         self._lat = json["lat"].double
         self._lng = json["lng"].double
         self._distance = json["distance"].string
+        self._calculatedDistance = self.distanceFromUser(location)
         self._rating = [String: Float]()
         self._rating["average"] = json["rating"].float
         self._comments = json["comments"].int8
@@ -203,5 +210,32 @@ class Restaurant {
         }
         
         return string
+    }
+    
+    func distanceFromUser(location: CLLocationCoordinate2D) -> Double {
+        let latU = deg2rad(location.latitude)
+        let lngU = deg2rad(location.longitude)
+        let latR = deg2rad(self.lat)
+        let lngR = deg2rad(self.lng)
+        let distance = acos(cos(latU) * cos(latR) * cos(lngU - lngR) + sin(latU) * sin(latR)) * 6371000
+        return distance
+    }
+    
+    func humanizeDifference(location: CLLocationCoordinate2D) -> String{
+        return humanizeDifference(distanceFromUser(location))
+    }
+    
+    func humanizeDifference(metres: Double) -> String {
+        let distance = ceil(metres / 5) * 5
+        
+        if distance > 1000 {
+            return "\(distance / 1000) km"
+        }
+        
+        return "\(distance) m"
+    }
+    
+    func deg2rad(deg:Double) -> Double {
+        return deg * M_PI / 180
     }
 }

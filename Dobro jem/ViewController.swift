@@ -9,8 +9,9 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import MapKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, CLLocationManagerDelegate
 {
     
     @IBOutlet weak var tableView: UITableView!
@@ -20,6 +21,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var filtered = [Restaurant]()
     var searchMode: Bool = false
     var params = [String: String]()
+    let locationManager = CLLocationManager()
+    var timer: NSTimer!
+    var location:CLLocationCoordinate2D!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,9 +32,27 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         searchBar.delegate = self
         searchBar.returnKeyType = UIReturnKeyType.Done
         params["api_key"] = API_KEY
-        initData()
         
-        tableView.reloadData()
+        self.locationManager.requestWhenInUseAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.requestLocation()
+            locationManager.startUpdatingLocation()
+        }
+
+        initData()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        locationAuthStatus()
+    }
+    
+    func locationAuthStatus() {
+        if CLLocationManager.authorizationStatus() != .AuthorizedWhenInUse {
+            locationManager.requestWhenInUseAuthorization()
+        }
     }
     
     func initData(){
@@ -43,12 +65,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     self.restaurants = [Restaurant]()
                     for (_, rest): (String, JSON) in json["restaurants"] {
                         let restaurant = Restaurant()
-                        restaurant.configRestaurant(rest)
+                        restaurant.configRestaurant(rest, location: self.location)
                         self.restaurants.append(restaurant)
-                        if self.restaurants.count % 20 == 0 {
-                            self.tableView.reloadData()
-                        }
                     }
+                    self.restaurants.sortInPlace({$0.calcDistance < $1.calcDistance})
                     self.tableView.reloadData()
                 }
             case .Failure(let error):
@@ -60,11 +80,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let restaurant = (searchMode) ? filtered[indexPath.row] : restaurants[indexPath.row]
         if let cell = tableView.dequeueReusableCellWithIdentifier("RestaurantCell") as? RestaurantCell {
-            cell.configureCell(restaurant)
+            cell.configureCell(restaurant, location: location)
             return cell
         } else {
             let cell = RestaurantCell()
-            cell.configureCell(restaurant)
+            cell.configureCell(restaurant, location: location)
             return cell
         }
     }
@@ -85,13 +105,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         } else {
             searchMode = true
             let text = searchBar.text!.lowercaseString
-            filtered = restaurants.filter({$0.name.lowercaseString.rangeOfString(text) != nil})
+            filtered = restaurants.filter({$0.name.lowercaseString.rangeOfString(text) != nil || $0.formatedAddress.lowercaseString.rangeOfString(text) != nil})
             tableView.reloadData()
         }
     }
     
     func searchBarCancelButtonClicked(searchBar: UISearchBar) {
         view.endEditing(true)
+    }
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        location = manager.location!.coordinate
+        params["lat"] = "\(location.latitude)"
+        params["lng"] = "\(location.longitude)"
+    }
+    
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+        print(error)
     }
 
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class RestaurantCell: UITableViewCell {
     
@@ -55,15 +56,15 @@ class RestaurantCell: UITableViewCell {
         
         self.layoutMargins = UIEdgeInsetsZero
     }
-    
-    func configureCell(restaurant: Restaurant) {
+
+    func configureCell(restaurant: Restaurant, location: CLLocationCoordinate2D) {
         restaurantName.text = restaurant.name
         restaurantPrice.text = restaurant.price
         restaurantAddress.text = restaurant.formatedAddress
         if let comments = restaurant.comments {
             restaurantComments.text = "\(comments)"
         }
-        restaurantDistance.text = restaurant.distance
+        restaurantDistance.text = restaurant.humanizeDifference(location)
         if let rating = restaurant.rating {
             restaurantRating.text = "\(rating)"
         }
